@@ -1,0 +1,35 @@
+{
+  "name": "route-prefix",
+  "version": "1.0.0",
+  "description": "add a prefix in front of a router",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "concat-stream": "~1.4.6",
+    "routes": "~1.2.0",
+    "through2": "~0.6.1",
+    "tape": "^2.13.2",
+    "covert": "^1.0.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "coverage": "covert test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/route-prefix.git"
+  },
+  "homepage": "https://github.com/substack/route-prefix",
+  "keywords": [
+    "router",
+    "mount",
+    "prefix",
+    "routes"
+  ],
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  },
+  "license": "MIT"
+}
