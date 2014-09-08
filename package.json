@@ -1,6 +1,6 @@
 {
   "name": "route-prefix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "add a prefix in front of a router",
   "main": "index.js",
   "dependencies": {},
