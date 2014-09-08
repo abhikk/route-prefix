@@ -5,7 +5,7 @@ var concat = require('concat-stream');
 var through = require('through2');
 
 test('router', function (t) {
-    t.plan(4);
+    t.plan(6);
     
     var r = createRouter();
     var router = prefix('/xyz', r);
@@ -17,6 +17,12 @@ test('router', function (t) {
     capture(router, '/xyz/robot', function (err, body) {
         t.ifError(err);
         t.equal(body.toString('utf8'), 'beep boop\n');
+    });
+    capture(router, '/abc', function (err, body) {
+        t.ok(err);
+    });
+    capture(router, '/robot', function (err, body) {
+        t.ok(err);
     });
 });
 
