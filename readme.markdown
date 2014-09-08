@@ -2,6 +2,8 @@
 
 add a prefix in front of a [router](https://npmjs.org/package/routes)
 
+[![build status](https://secure.travis-ci.org/substack/route-prefix.png)](http://travis-ci.org/substack/route-prefix)
+
 # example
 
 Suppose you have a router.js file:
